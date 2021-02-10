@@ -1,0 +1,100 @@
+// right header styles
+header {
+  display: flex;
+
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+  }
+
+  .headerBoxLeft,
+  .headerBoxRight {
+    flex: 1;
+  }
+
+  // Left side of header
+  .headerBoxLeft {
+    background: $lightGrey;
+    display: grid;
+    grid-template-columns: auto repeat(6, 100px);
+
+    // left contents
+    .headerBoxLeftContents {
+      grid-column: 2 / 8;
+      display: flex;
+
+      // space between page links and social links
+      nav {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin: 0 40px;
+
+        height: max-content;
+      }
+
+      ul {
+        display: flex;
+        // margin-left: 100px;
+
+        // nav bar text (excludes fb & email logo)
+        .navBarLi {
+          margin-top: 40px;
+        }
+
+        // list item designs (navbar)
+        li {
+          &:not(:last-child) {
+            padding-right: 20px;
+          }
+
+          // link designs
+          a {
+            text-decoration: none;
+            color: black;
+          }
+        }
+      }
+    }
+
+    // HT Income logo image
+    .logo {
+      margin-top: 20px;
+      width: 70px;
+      height: 70px;
+    }
+  }
+
+  // Facebook & phone number icons fab = facebook fas = phone number
+  // .fab {
+  //   margin-left: 100px;
+  // }
+
+  .fab,
+  .fas {
+    margin-top: 42px;
+  }
+
+  .fab::before,
+  .fas::before {
+    font-size: 29px;
+  }
+
+  // Header right
+  .headerBoxRight {
+    background: $green;
+    display: grid;
+    grid-template-columns: repeat(6, minmax(16.6%, 100px)) auto;
+
+    // right header contents
+    .headerBoxRightContents {
+      grid-column: 1 / 6;
+      padding: 100px;
+
+      // paragraph
+      p {
+        padding-top: 20px;
+      }
+    }
+  }
+}

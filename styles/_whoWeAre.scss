@@ -1,0 +1,15 @@
+.whoWeAre {
+  margin: 100px auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  h2 {
+    font-size: 30px;
+  }
+
+  h2,
+  p {
+    text-align: center;
+  }
+}

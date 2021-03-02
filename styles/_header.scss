@@ -12,11 +12,17 @@ header {
     flex: 1;
   }
 
+  img {
+    max-width: 485px;
+    max-height: 485px;
+  }
+
   // Left side of header
   .headerBoxLeft {
     background: $lightGrey;
     display: grid;
     grid-template-columns: auto repeat(6, 100px);
+    width: 50%;
 
     // left contents
     .headerBoxLeftContents {
@@ -54,6 +60,10 @@ header {
             color: black;
           }
         }
+      }
+
+      .imgContainer {
+        width: 497px;
       }
     }
 
@@ -94,6 +104,7 @@ header {
       // paragraph
       p {
         padding-top: 20px;
+        text-align: left;
       }
     }
   }

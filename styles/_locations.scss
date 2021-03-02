@@ -1,0 +1,36 @@
+.locations {
+  height: 442px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    margin-bottom: 20px;
+  }
+
+  p {
+    text-align: left;
+    padding-top: 2px;
+  }
+
+  h3 {
+    font-weight: bold;
+  }
+}
+
+.locationsContainerContainer {
+  display: flex;
+  justify-content: space-around;
+
+  button {
+    margin-top: 20px;
+  }
+}
+
+.locationContainer {
+  display: flex;
+
+  img {
+    margin-right: 15px;
+  }
+}

@@ -1,0 +1,11 @@
+.clientForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200px;
+  background-color: $lightGrey;
+
+  button {
+    width: max-content;
+  }
+}

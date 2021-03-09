@@ -25,7 +25,7 @@ header {
     width: 50%;
 
     // left contents
-    .headerBoxLeftContents {
+    .headerLeftNav {
       grid-column: 2 / 8;
       display: flex;
 
@@ -41,12 +41,7 @@ header {
 
       ul {
         display: flex;
-        // margin-left: 100px;
-
-        // nav bar text (excludes fb & email logo)
-        .navBarLi {
-          margin-top: 40px;
-        }
+        padding-top: 40px;
 
         // list item designs (navbar)
         li {
@@ -61,10 +56,24 @@ header {
           }
         }
       }
+    }
 
-      .imgContainer {
-        width: 497px;
-      }
+    // nav bar hover effects
+    i:hover,
+    li:hover {
+      color: $burgundy;
+      cursor: pointer;
+    }
+
+    .navBarLi:hover {
+      text-decoration: underline;
+    }
+
+    // large image
+    .imageContainer {
+      width: 497px;
+      grid-column: 2 / 8;
+      padding: 20px;
     }
 
     // HT Income logo image
@@ -73,16 +82,6 @@ header {
       width: 70px;
       height: 70px;
     }
-  }
-
-  // Facebook & phone number icons fab = facebook fas = phone number
-  // .fab {
-  //   margin-left: 100px;
-  // }
-
-  .fab,
-  .fas {
-    margin-top: 42px;
   }
 
   .fab::before,

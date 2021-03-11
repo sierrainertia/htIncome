@@ -1,8 +1,8 @@
 .locations {
-  height: 442px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 30px;
 
   h2 {
     margin-bottom: 20px;
@@ -29,10 +29,14 @@
 
 .locationContainer {
   display: flex;
+  grid-gap: 15px;
 
   img {
-    margin-right: 15px;
     width: 200px;
     height: 200px;
+  }
+
+  .addressContainer > * + * {
+    margin-top: 5px;
   }
 }

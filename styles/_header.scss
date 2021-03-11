@@ -13,7 +13,7 @@ header {
   }
 
   img {
-    max-width: 485px;
+    max-width: 100%;
     max-height: 485px;
   }
 
@@ -21,7 +21,7 @@ header {
   .headerBoxLeft {
     background: $lightGrey;
     display: grid;
-    grid-template-columns: auto repeat(6, 100px);
+    grid-template-columns: auto repeat(6, minmax(auto, 100px));
     width: 50%;
 
     // left contents
@@ -71,7 +71,6 @@ header {
 
     // large image
     .imageContainer {
-      width: 497px;
       grid-column: 2 / 8;
       padding: 20px;
     }

@@ -9,15 +9,20 @@
 
       li {
         text-align: center;
-        div {
-          padding-top: 20px;
-        }
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
       }
 
-      img {
+      .iconContainer {
+        width: 165px;
+        height: 165px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
         border-radius: 50%;
         background-color: $darkGrey;
-        padding: 30px;
       }
     }
   }

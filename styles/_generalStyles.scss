@@ -18,17 +18,14 @@ p {
   text-align: center;
 }
 
-button {
+.button {
+  display: block;
   background-color: $burgundy;
   border: none;
   border-radius: 5px;
-  height: 41px;
-  width: 192px;
-
-  a,
-  button {
-    color: white;
-
-    text-decoration: none;
-  }
+  width: max-content;
+  padding: 10px 20px;
+  color: white;
+  text-align: center;
+  text-decoration: none;
 }

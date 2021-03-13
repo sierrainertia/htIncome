@@ -98,6 +98,9 @@ header {
     .headerBoxRightContents {
       grid-column: 1 / 6;
       padding: 100px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
 
       // paragraph
       p {
